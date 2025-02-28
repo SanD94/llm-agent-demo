@@ -4,7 +4,6 @@ import argparse
 import textwrap
 from typing import List, Dict, Any, Optional
 from huggingface_hub import InferenceClient
-from dotenv import load_dotenv
 
 
 
@@ -12,7 +11,6 @@ class LlamaChat:
     def __init__(self, api_token: Optional[str] = None):
         """Initialize the Llama chat interface with Hugging Face API token."""
         # Load environment variables from .env file
-        load_dotenv()
         self.api_token = api_token or os.environ.get("HF_API_TOKEN")
         if not self.api_token:
             raise ValueError("Hugging Face API token is required. Set HF_API_TOKEN environment variable or pass it as an argument.")

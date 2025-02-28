@@ -1,3 +1,5 @@
 .env
 .virtual_documents/
 .ipynb_checkpoints/
+.vscode/
+.infisical.json

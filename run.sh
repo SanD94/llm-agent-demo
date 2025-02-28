@@ -1,1 +1,1 @@
-python main.py
+infisical run -- python main.py
